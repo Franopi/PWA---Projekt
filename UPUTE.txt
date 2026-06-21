@@ -1,8 +1,8 @@
 UPUTE:
-1. stavi mapu "projekt" u \xampp\htdocs\
+1. stavi mapu "PWA_Projekt_Fran_Pilija-main" u \xampp\htdocs\
 2. kreiraj bazu "databaza" na phpMyAdminu
 3. importaj "databaza.sql" u bazu databaza
-4. otvori "http://localhost/projekt/index.php"
+4. otvori "http://localhost/PWA_Projekt_Fran_Pilija-main/index.php"
 
 Admin korisnik:
 korisničko ime: admin

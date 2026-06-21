@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    padding: 10px 20px 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-stern {
+    width: 46px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #e20001;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-title a {
+    color: black;
+}
+
+.section-title a:hover {
+    color: #e20001;
+    text-decoration: none;
+}
+
+.articles-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.article-card {
+    flex: 1;
+}
+
+.article-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.article-card .category-tag {
+    font-size: 11px;
+    font-weight: bold;
+    color: #e20001;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.article-card h3 {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.article-card h3 a {
+    color: black;
+}
+
+.article-card h3 a:hover {
+    color: #e20001;
+}
+
+.article-single {
+    max-width: 800px;
+}
+
+.article-single .category-tag {
+    font-size: 12px;
+    font-weight: bold;
+    color: #e20001;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.article-single h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.article-single .article-summary {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.article-single img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.article-single .article-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.category-page-title {
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
+    max-width: 700px;
+}
+
+.form-wrapper h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
+.form-item {
+    margin-bottom: 18px;
+}
+
+.form-item label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-field-textual {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-field-textual:focus {
+    border-color: #e20001;
+}
+
+textarea.form-field-textual {
+    resize: vertical;
+}
+
+.form-item .input-text {
+    font-size: 13px;
+}
+
+.btn {
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-submit {
+    background-color: #e20001;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #b50015;
+}
+
+.btn-reset {
+    background-color: #555;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-reset:hover {
+    background-color: #333;
+}
+
+.admin-wrapper h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
+.admin-article-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #fafafa;
+}
+
+.admin-article-form h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.btn-delete {
+    background-color: #333;
+    color: white;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+
+.btn-delete:hover {
+    background-color: #000;
+}
+
+.btn-update {
+    background-color: #e20001;
+    color: white;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-update:hover {
+    background-color: #b50015;
+}
+
+.login-wrapper {
+    max-width: 400px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.login-wrapper h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.poruka-greska {
+    color: #e20001;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.poruka-uspjeh {
+    color: green;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.bojaPoruke {
+    color: #e20001;
+    font-size: 12px;
+}
+
+footer {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #e20001;
+}
+
+@media (max-width: 768px) {
+    .articles-grid {
+        flex-direction: column;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+}

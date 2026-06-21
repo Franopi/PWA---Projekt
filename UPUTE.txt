@@ -1,0 +1,13 @@
+UPUTE:
+1. stavi mapu "projekt" u \xampp\htdocs\
+2. kreiraj bazu "databaza" na phpMyAdminu
+3. importaj "databaza.sql" u bazu databaza
+4. otvori "http://localhost/projekt/index.php"
+
+Admin korisnik:
+korisničko ime: admin
+lozinka: password
+
+Korisnik bez administratorskih prava:
+korisničko ime: gost
+lozinka: pass
